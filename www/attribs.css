@@ -1,0 +1,21 @@
+a {text-decoration:none}
+ul{list-style-type:none}
+div {float:left}
+:target {color:red}
+#top {border:1px solid red}
+H1 {text-align:center}
+#top_nav { margin:0 10px  20px 220px;border:1px solid blue }
+#top_nav ul {margin:0 10px  20px 50px}
+#top_nav ul  li {display:inline-block; margin:0 10px 0 10px}
+#container {margin-left:150px;margin-top:10px;width:100%}
+#ref {width:20%;}
+#left {
+     border:1px solid orange;
+    }
+#article {width:35%;margin-left:50px;}
+#main {
+    height:280px;
+     border:1px solid black}
+#aside {width:30%; margin-left:50px; border:1px solid grey}
+footer {clear:both;height:250px;border:1px solid brown; margin-left:150px}
+footer section {margin:5px 0 0 5px; border:1px solid purple}

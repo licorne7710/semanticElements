@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<!--
+  * Please see the included README.md file for license terms and conditions.
+  -->
+<head>
+    <title>SemanticElements</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" type="text/css" href="attribs.css">
+    <!-- see http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/quick-tip-dont-forget-the-viewport-meta-tag -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=no">
+    <style>
+        <link rel="stylesheet" type="text/css" href="attribs.css">
+        /* following two viewport lines are equivalent to meta viewport statement above, needed for Windows */
+        /* see http://www.quirksmode.org/blog/archives/2014/05/html5_dev_conf.html and http://dev.w3.org/csswg/css-device-adapt/ */
+        @-ms-viewport { width: 100vw ; min-zoom: 100% ; zoom: 100% ; }  @viewport { width: 100vw ; min-zoom: 100% zoom: 100% ; }
+        @-ms-viewport { user-zoom: fixed ; min-zoom: 100% ; }           @viewport { user-zoom: fixed ; min-zoom: 100% ; }
+    </style>
+
+    <!-- Uncomment the following scripts if you convert your "Standard HTML5" project into a "Cordova" project. -->
+    <!-- <script src="cordova.js"></script> -->          <!-- phantom library, needed for Cordova api calls, added during build -->
+    <!-- <script src="js/app.js"></script> -->           <!-- recommended location of your JavaScript code relative to other JS files -->
+    <!-- <script src="xdk/init-dev.js"></script> -->     <!-- normalizes device and document ready events, see README for details -->
+</head>
+
+<body>
+    <header id="top" title="header" >
+    <H1>Usage of the main new HTML5 semantic elements</H1>
+
+        <nav id="top_nav" title="nav">
+            <ul>
+                <li><a href="#header_art" >header</a> </li>
+                <li><a href="#footer">footer</a> </li>
+                <li><a href="#left">nav</a> </li>
+                <li><a href="#section">section</a> </li>
+                <li><a href="#main">article</a> </li>
+                <li><a href="#aside">aside</a> </li>
+                <li><a href="#details">details</a> </li>
+                <li><a href="#figcaption">figcaption</a> </li>
+                <li><a href="#fountain">figure</a> </li>
+                <li><a href="#mark">mark</a> </li>
+                <li><a href="#summary">summary</a> </li>
+            </ul>
+         </nav>
+    </header>
+<div id="container">
+   <div id="ref" >
+        <nav id="left" title="nav_panel">
+        <header id="RefHeader" title="RefHeader">
+            <h1>References</h1>
+       </header>
+            <ul>
+                <li><a href="http://www.w3schools.com/tags/tag_header.asp" target="_blank">header</a> </li>
+                <li><a href="http://www.w3schools.com/tags/tag_footer.asp"  target="_blank" >footer</a> </li>
+                <li><a href="http://www.w3schools.com/tags/tag_nav.asp"  target="_blank">nav</a> </li>
+                <li><a href="http://www.w3schools.com/tags/tag_section.asp" target="_blank">section</a> </li>
+                <li><a href="http://www.w3schools.com/tags/tag_article.asp" target="_blank">article</a> </li>
+                <li><a href="http://www.w3schools.com/tags/tag_aside.asp" target="_blank">aside</a> </li>
+                <li><a href="http://www.w3schools.com/tags/tag_details.asp" target="_blank">details</a> </li>
+                <li><a href="http://www.w3schools.com/tags/tag_figcaption.asp" target="_blank">figcaption</a> </li>
+                <li><a href="http://www.w3schools.com/tags/tag_figure.asp"  target="_blank">figure</a> </li>
+                <li><a href="http://www.w3schools.com/tags/tag_mark.asp" target="_blank">mark</a> </li>
+                <li><a href="http://www.w3schools.com/tags/tag_summary.asp" target="_blank">summary</a> </li>
+            </ul>
+
+    </nav>
+    </div>
+    <div id="article">
+    <article  id="main" title="article">
+        <header id="header_art" title="header_art">
+            <h1>Semantic Elements</h1>
+        </header>
+        <details id="details">
+            <summary id="summary">
+            Here is introduced a minimal web page, implementing the Semantic Elements of HTML5.
+            </summary>
+                <mark id="mark">The listed above links</mark> redirect to the implementations of the semantic  elements  on this page. <mark>The left Navigation panel </mark>refers to HTML5 reference pages at the w3schools site.
+                <mark>Every implemented semantic element</mark> has his own border and shows the own role, when hovered.
+        </details>
+    </article>
+    </div>
+    <div id="aside">
+    <aside  title"aside">
+     <figure id="fountain" title="figure">
+                <img src="images/fountain-tf21-r.jpg"  >
+
+                <figcaption id="figcaption" title "figcaption">
+                    Taken from http://www.bigfoto.com/
+                </figcaption>
+       </figure>
+
+    </aside>
+  </div>
+</div>
+<footer id="footer" title="footer">
+<section id="section" title="section">
+    <p>Author: licorne</p>
+    <p>&copy; 2016</p>
+</section>
+<p>
+    Author express his gratitude to:
+    <ul>
+        <li><a href="developers.Intel.com">Intel Developers site</a>  for xdk, <br>
+        <li><a href="http://www.bigfoto.com/">igfoto </a> for the image,<br>
+        <li><a href="http://wwww.w3.org"> W3</a> for  the course, <br>
+        <li> <a href="www.edx.org">EDX</a> for all the organisation
+    </ul>
+ </p>
+
+</footer>
+</body>
+</html>
